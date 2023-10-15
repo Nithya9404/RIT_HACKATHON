@@ -1,0 +1,8 @@
+<label>
+    <input type="file" (change)="onFileSelected($event)" />
+    Upload
+</label>
+<div class="file-info" *ngIf="selectedFile">
+    Selected File: <span>{{ selectedFile.name }}</span>
+</div>
+  

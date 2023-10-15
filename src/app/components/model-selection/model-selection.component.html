@@ -1,0 +1,4 @@
+<select [(ngModel)]="selectedstring">
+    <option *ngFor="let item of items" [value]="item">{{item}}</option>
+</select>
+<button mat-button>Submit</button>
