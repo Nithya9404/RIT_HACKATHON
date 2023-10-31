@@ -38,7 +38,7 @@ Original file is located at
 # import matplotlib.pyplot as plt
 # 
 # # Load the data
-# data = pd.read_csv("/content/updated_drg.csv")
+# data = pd.read_csv("updated_drg.csv")
 # 
 # # Create a Streamlit app
 # st.title("Healthcare Data Analysis")
