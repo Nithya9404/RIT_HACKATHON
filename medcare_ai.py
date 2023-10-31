@@ -211,21 +211,3 @@ Original file is located at
 #     st.write(f"Predicted Mortality: {prediction_mortality:.2f}")
 # 
 # 
-# 
-# 
-# 
-# 
-#
-
-!streamlit run app.py &>/dev/null&
-
-!ngrok authtoken 2XWTBphJxJsxC5wmlG3ImA52xUo_4Zv9S98fNuBXZNwqwDhhm
-
-!wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
-
-!unzip ngrok-stable-linux-amd64.zip
-
-get_ipython().system_raw('./ngrok http 8501 &')
-!curl -s http://localhost:4040/api/tunnels | python3 -c "import sys, json; print(json.load(sys.stdin)['tunnels'][0]['public_url'])"
-
-!streamlit run /content/app.py
