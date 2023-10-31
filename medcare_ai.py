@@ -100,7 +100,7 @@ model_severity.fit(X_tfidf, y_severity)
 
 # Train a Linear Regression model for mortality
 model_mortality = LinearRegression()
-model_mortality fit(X_tfidf, y_mortality)
+model_mortality.fit(X_tfidf, y_mortality)
 
 # Add a section for prediction
 st.header("Patient Severity and Mortality Prediction")
